@@ -65,7 +65,7 @@ async def on_ready():
             existing_names.add(emoji_name.lower())
             print(f"Uploaded: {emoji_name}")
 
-            # 🔥 RATE LIMIT (3 seconds)
+            # RATE LIMIT (3 seconds)
             await asyncio.sleep(3)
 
         except discord.HTTPException as e:
